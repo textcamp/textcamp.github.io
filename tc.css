@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+* {
+    font-size: 3vw;
+    font-family: 'EB Garamond', Garamond, 'Times New Roman', Times, serif;
+    line-height: 1.75em;
+}
+
+h3 {
+    font-size: larger;
+}
+
+p {
+    margin: 1.5em 0;
+    text-indent: 0em;
+}
+
+body {
+    margin: 0 4em;
+}
+
+header,
+footer {
+    padding: 5px;
+    text-align: center;
+    font-size: smaller;
+}
+
+header {
+    color: #a00;
+    font-style: italic;
+    margin-bottom: 20px;
+    background-color: yellow;
+}
+
+footer {
+    border-top: 1px solid #888;
+}
+
+code {
+    background-color: #ddd;
+    padding: 2px;
+}
+
+#signin-interface,
+#game-interface {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1em auto auto;
+    grid-template-areas: "time time time health" "spc  spc  spc  population" "input input input population";
+    gap: 20px;
+}
+
+.time {
+    grid-area: time;
+}
+
+.health {
+    grid-area: health;
+}
+
+.space {
+    grid-area: spc;
+    padding: 10px;
+}
+
+.population {
+    grid-area: population;
+}
+
+.population ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.temporary {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.input {
+    grid-area: input;
+    padding: 10px;
+}
+
+.input>input {
+    width: 100%;
+}
+
+#space-content {
+    white-space: pre-wrap;
+}
+
+.action {
+    color: #080;
+    cursor: pointer;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 3s ease-out;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: #bbb;
+        background-color: #1b1b18;
+    }
+}
