@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-* {
-    font-size: 3vw;
+
+body {
+    margin: 0 4em;
+    font-size: 1.8rem;
     font-family: 'EB Garamond', Garamond, 'Times New Roman', Times, serif;
     line-height: 1.75em;
 }
 
 h3 {
-    font-size: larger;
+    font-size: 2.5rem;
 }
 
 p {
@@ -14,15 +16,12 @@ p {
     text-indent: 0em;
 }
 
-body {
-    margin: 0 4em;
-}
 
 header,
 footer {
     padding: 5px;
     text-align: center;
-    font-size: smaller;
+    font-size: 1.2rem;
 }
 
 header {
